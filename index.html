@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | super-rinkeby</title>
+    <title>Super Rinkeby</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/061f463856577255fb5eefaf73e67127.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script src="TemplateData/web3Connect.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/3d0e960ff156cbcb626832b08586a29e.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/super-rinkeby-webgl.json");
     </script>
   </head>
   <body>
@@ -18,7 +20,7 @@
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">super-rinkeby</div>
+        <div class="title">Super Rinkeby</div>
       </div>
     </div>
   </body>
